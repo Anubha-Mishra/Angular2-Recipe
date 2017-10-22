@@ -1,7 +1,17 @@
+<header></header>
 <div class="container">
-    <header></header>
-    <div class="row">
-        <div class="col-md-6"><recipe-list></recipe-list></div>
-        <div class="col-md-6"><recipe-details></recipe-details></div>
+  <div class="row">
+    <div class="col-md-6">
+        <recipe-list (recipeSelected)="selectedRecipe = $event"></recipe-list>
     </div>
+    <div class="col-md-6">
+        <recipe-details [selectedRecipe]="selectedRecipe"></recipe-details>
+    </div>
+  </div>
+  <div class="row">
+      <shopping></shopping>
+  </div>
 </div>
+
+
+
