@@ -1,16 +1,8 @@
 <header></header>
 <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-        <recipe-list (recipeSelected)="selectedRecipe = $event"></recipe-list>
-    </div>
-    <div class="col-md-6">
-        <recipe-details [selectedRecipe]="selectedRecipe"></recipe-details>
-    </div>
-  </div>
-  <div class="row">
-      <shopping></shopping>
-  </div>
+ 
+ 
+  <router-outlet></router-outlet>
 </div>
 
 
